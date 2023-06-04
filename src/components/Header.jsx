@@ -1,5 +1,8 @@
+import {useState} from 'react'
+
 import '../styles/header.css'
 import { NavLink, Link } from 'react-router-dom'
+import { FaBars } from 'react-icons/fa'
 import icInstagram from "../assets/icon-instagram.svg"
 import icSpotify from "../assets/icon-spotify.svg"
 import icWtsp from "../assets/icon-whatsapp.svg"
@@ -8,11 +11,21 @@ import iconLetter from '../assets/icon-letter.png'
 import iconArrow from '../assets/icon-arrow.png'
 import logo from '../assets/logo.png'
 
+import Nav from '../components/nav/Nav'
+
 
 const Header = () => {
 
+  const [ activeNav, setActiveNav ] = useState(false)
+  
+  const handleNav = () => {
+    setActiveNav(!activeNav)
+    console.log("active navbar")
+  }
+
   return(
-<>
+    <header className='header'>
+
       <div className='header_social'>
         <div className='claim'>
           <a className='link_trial' href="#" target="_blank">
@@ -25,7 +38,7 @@ const Header = () => {
             <div className='suscribe-text'>
               <p>Suscribe for FREE to Snack the Español </p>
               <img src={iconArrow} className='arrow-icon'/>
-              <p> podcast and newsletter with exclusive content</p>
+              <p> Podcast and newsletter with exclusive content</p>
             </div>
             <div className='suscribe_icons'>
               <a className='link_trial' href="#" target="_blank">
@@ -50,37 +63,25 @@ const Header = () => {
           </div>
 
         </div>
-
       </div>
-
-    <header className="header">
-      <div className="container header_content">
+      
+      <div className="header_content">
           <div className="header_logo">
               <NavLink className="logo-container"to="/">
                       <img className="logo" src={ logo } alt="logo" />
               </NavLink>
           </div>
           <div className="nav_content">
-              <nav className="navbar">
-                  <ul className="navbar_content">
-                      <li className="navbar_item"><NavLink className="navbar_link link" to="/">Our Lessons</NavLink></li>
-                      <li className="navbar_item"><NavLink className="navbar_link link" to="/">teachers</NavLink></li>
-                      <li className="navbar_item"><NavLink className="navbar_link link" to="/">level test</NavLink></li>
-                      <li className="navbar_item"><NavLink className="navbar_link link" to="/">prices</NavLink></li>
-                      <li className="navbar_item"><NavLink className="navbar_link link" to="/ClubConversacion">Club de conversacion</NavLink></li>
-                      <li className="navbar_item"><NavLink className="navbar_link link" to="/SpanishForKids">Spanish for kids</NavLink></li>
-                      <li className="navbar_item"><NavLink className="navbar_link link" to="/SnackdeSpanol">Snack de español</NavLink></li>
-                  </ul>
-              </nav>
+              <Nav activeNav={activeNav} setActiveNav={setActiveNav}/>
           </div>
           <div className="hamburger_nav">
               <Link to="#" className="menu-bars">
-                  {/* <FaIcons.FaBars onClick={showSidebar}/> */}
+                  <FaBars onClick={ handleNav }/>
               </Link>
           </div>
       </div>
+
     </header>
-    </>
   )
 
 }

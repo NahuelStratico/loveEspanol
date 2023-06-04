@@ -12,11 +12,11 @@ function App() {
     <>
       <Header/>
       <Routes>
-          <Route path="/" exact Component={Home}/>
-          <Route path="/ClubConversacion" Component={ClubConversacion}/>
-          <Route path="/SpanishForKids" Component={SpanishForKids}/>
-          <Route path="/SnackdeSpanol" Component={SnackdeSpanol}/>
-          <Route path="*" Component={Page404}/>
+          <Route exact path="/" element={ <Home/> }/>
+          <Route path="/ClubConversacion" element={ <ClubConversacion/> }/>
+          <Route path="/SpanishForKids" element={ <SpanishForKids/> }/>
+          <Route path="/SnackdeSpanol" element={ <SnackdeSpanol/> }/>
+          <Route path="*" element={ <Page404/> }/>
       </Routes>
     </>
   );
