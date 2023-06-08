@@ -35,8 +35,9 @@ font-family: 'Montserrat', sans-serif;
   justify-content: center;
   align-items: center;
   width: 20%;
+  height: auto;
   background: var(--color-pink);
-  padding: 1rem;
+  padding: .2rem 1rem;
 }
 .link_trial{
   display: flex;
@@ -52,7 +53,8 @@ font-family: 'Montserrat', sans-serif;
   align-items: center;
   padding: 4px 20px 4px 20px;
   width: 80%;
-  padding: 1rem;
+  height: auto;
+  padding: .2rem 1rem;
 }
 .suscribe-content{
   display: flex;
@@ -67,6 +69,8 @@ font-family: 'Montserrat', sans-serif;
 .suscribe_icons{
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .claim p, .suscribe p{
   color: #ffffff;
@@ -78,16 +82,16 @@ font-family: 'Montserrat', sans-serif;
   align-items: center;
 }
 .icons-social{
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   margin: 0 5px 0 5px;
 }
 .letter{
   margin-left: 18px;
 }
 .micro{
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
 .arrow-icon{
   width: 25px;
@@ -110,7 +114,7 @@ font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 .logo-container{
   display: inline-block;
@@ -125,10 +129,7 @@ font-family: 'Montserrat', sans-serif;
 /* ============
 --------------- Navbar
 ============== */
-/* .nav_content{
-  width: 100%;
-  background: var(--color-nav) ;
-} */
+
 .close_icon{
  display: none;
 }
@@ -212,6 +213,7 @@ font-family: 'Montserrat', sans-serif;
   margin-bottom: 0;
   justify-content: start;
   margin-left: 2rem;
+  margin-top: 0;
 }
 /* .navbar_content{
   display: none;
@@ -222,8 +224,8 @@ font-family: 'Montserrat', sans-serif;
     left: 0;
     right: 0;
     bottom: 0;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
     z-index: 100;
     background-color: var(--color-nav);
     transition: all .5s ease-in;
