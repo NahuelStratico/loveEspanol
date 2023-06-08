@@ -11,11 +11,10 @@ const Nav = ({ activeNav, setActiveNav }) => {
   }
 
   return(
-    <nav className="navbar">
+    <nav className={activeNav? 'navbar_mobile': 'navbar_desktop'}>
         <IoClose className="close_icon" onClick={closeNav}/>
         
-        
-          <ul className= { activeNav ? 'open_nav' : 'close_Modal'}>
+          <ul className='navbar_content'>
               <li className="navbar_item"><NavLink className="navbar_link link" to="/">Our Lessons</NavLink></li>
               <li className="navbar_item"><NavLink className="navbar_link link" to="/">teachers</NavLink></li>
               <li className="navbar_item"><NavLink className="navbar_link link" to="/">level test</NavLink></li>
@@ -24,10 +23,7 @@ const Nav = ({ activeNav, setActiveNav }) => {
               <li className="navbar_item"><NavLink className="navbar_link link" to="/SpanishForKids">Spanish for kids</NavLink></li>
               <li className="navbar_item"><NavLink className="navbar_link link" to="/SnackdeSpanol">Snack de español</NavLink></li>
           </ul>
-          
-  
-
-        
+               
     </nav>
   )
 }

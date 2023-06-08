@@ -71,9 +71,9 @@ const Header = () => {
                       <img className="logo" src={ logo } alt="logo" />
               </NavLink>
           </div>
-          <div className="nav_content">
+          {/* <div className="nav_content"> */}
               <Nav activeNav={activeNav} setActiveNav={setActiveNav}/>
-          </div>
+          {/* </div> */}
           <div className="hamburger_nav">
               <Link to="#" className="menu-bars">
                   <FaBars onClick={ handleNav }/>
