@@ -255,6 +255,9 @@ font-family: 'Montserrat', sans-serif;
   justify-content: space-around;
   padding: 0;
 }
+.navbar_item{
+  min-height: 0;
+}
  .hamburger_nav{
      display: flex;
      flex-direction: row;
