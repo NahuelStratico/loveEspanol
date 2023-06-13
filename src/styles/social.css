@@ -1,0 +1,118 @@
+/* ===============
+--------------- Social ----------
+==================*/
+
+.header_social{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+.claim{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: auto;
+  background: var(--color-pink);
+  padding: .2rem 1rem;
+}
+.link_trial{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+}
+.suscribe{
+  background: var(--color-logo);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 20px 4px 20px;
+  width: 80%;
+  height: auto;
+  padding: .2rem 1rem;
+}
+.suscribe-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.suscribe-text{
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+}
+.suscribe_icons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.claim p, .suscribe p{
+  color: #ffffff;
+  margin: 0;
+}
+.icons-social_container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.icons-social{
+  width: 35px;
+  height: 35px;
+  margin: 0 5px 0 5px;
+}
+.letter{
+  margin-left: 18px;
+}
+.micro{
+  width: 25px;
+  height: 25px;
+}
+.arrow-icon{
+  width: 25px;
+  height: 20px;
+  margin: 0 10px 0 10px;
+}
+
+/* ================================
+///////////////////////////////////////////// Queries
+============================ */
+
+@media only screen and (max-width: 992px) {
+  .header_social{flex-direction: column;}
+  .claim{width: 100%; padding: 10px;}
+  .suscribe{width: 100%; padding: 10px; justify-content: space-around;}
+}
+
+@media screen and (max-width: 768px){
+  /* social */
+  .suscribe{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .suscribe-content{flex-direction: column;}
+  .suscribe_icons{
+    flex-direction: row;
+    margin: 5px 0;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+
+  /* social */
+  .suscribe-text{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrow-icon{
+    transform: rotate(90deg);
+    margin: .3rem 0;
+  }
+
+}

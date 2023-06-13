@@ -5,3 +5,12 @@ html, body{
   min-width: 100vw;
   min-height: 100vh;
 }
+
+:root{
+  --montserrat: 'Montserrat', sans-serif;
+  --color-pink: #FE689B;
+  --color-logo: #85DCD7;
+  --color-black: #00343D;
+  --color-blue: #1292EE;
+  --color-nav: #027F9B;
+}
