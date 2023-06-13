@@ -20,6 +20,7 @@ font-family: 'Montserrat', sans-serif;
   width: 100%;
  }
 
+
 /* ===============
 --------------- Social ----------
 ==================*/
@@ -130,17 +131,21 @@ font-family: 'Montserrat', sans-serif;
 --------------- Navbar
 ============== */
 
+
 .close_icon{
  display: none;
 }
 .navbar_desktop{
+  position: sticky;
+  top: 0;
   background: var(--color-nav);
   min-height: 45px;
-  min-width: 100%;
+  min-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .navbar_content{
   display: flex;
   flex-direction: row;
@@ -215,11 +220,9 @@ font-family: 'Montserrat', sans-serif;
   margin-left: 2rem;
   margin-top: 0;
 }
-/* .navbar_content{
-  display: none;
-} */
+
 .navbar_mobile{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -231,7 +234,7 @@ font-family: 'Montserrat', sans-serif;
     transition: all .5s ease-in;
  }
 .navbar_desktop{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -245,12 +248,13 @@ font-family: 'Montserrat', sans-serif;
 }
  .close_icon{
   display: block;
-  position: absolute;
+  position: fixed;
   right: 10px;
   top: 10px;
   font-size: 1.5em;
   color: #ffffff;
   z-index: 101;
+  transition: all .5s ease-in-out;
 }
  .navbar_content{
   flex-direction: column;
@@ -291,6 +295,7 @@ font-family: 'Montserrat', sans-serif;
   .suscribe-text{
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .arrow-icon{

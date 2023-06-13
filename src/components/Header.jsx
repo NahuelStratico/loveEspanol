@@ -1,5 +1,7 @@
 import {useState} from 'react'
 
+import { StickyContainer, Sticky } from 'react-sticky';
+
 import '../styles/header.css'
 import { NavLink, Link } from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
@@ -10,8 +12,10 @@ import iconMicrophone from '../assets/icon-microphone.png'
 import iconLetter from '../assets/icon-letter.png'
 import iconArrow from '../assets/icon-arrow.png'
 import logo from '../assets/logo.png'
+import { IoClose } from "react-icons/io5";
 
 import Nav from '../components/nav/Nav'
+
 
 
 const Header = () => {
@@ -20,8 +24,8 @@ const Header = () => {
   
   const handleNav = () => {
     setActiveNav(!activeNav)
-    console.log("active navbar")
   }
+
 
   return(
     <header className='header'>
@@ -67,16 +71,43 @@ const Header = () => {
       
       <div className="header_content">
           <div className="header_logo">
-              <NavLink className="logo-container"to="/">
+              <NavLink className="logo-container" to="/">
                       <img className="logo" src={ logo } alt="logo" />
               </NavLink>
           </div>
-          {/* <div className="nav_content"> */}
-              <Nav activeNav={activeNav} setActiveNav={setActiveNav}/>
-          {/* </div> */}
+
+          <StickyContainer>
+            
+            <Sticky topOffset={80}>
+              {(props) => ( 
+
+                <nav className={activeNav ? 'navbar_mobile' : 'navbar_desktop'}>
+                  <IoClose className="close_icon" onClick={handleNav}/>
+                
+                  <ul className='navbar_content'>
+                      <li className="navbar_item"><NavLink className="navbar_link link" onClick={() => setActiveNav(false)} to="/">Our Lessons</NavLink></li>
+                      <li className="navbar_item"><NavLink className="navbar_link link" onClick={() => setActiveNav(false)} to="/">teachers</NavLink></li>
+                      <li className="navbar_item"><NavLink className="navbar_link link" onClick={() => setActiveNav(false)} to="/">level test</NavLink></li>
+                      <li className="navbar_item"><NavLink className="navbar_link link" onClick={() => setActiveNav(false)} to="/">prices</NavLink></li>
+                      <li className="navbar_item"><NavLink className="navbar_link link" onClick={() => setActiveNav(false)} to="/ClubConversacion">Club de conversacion</NavLink></li>
+                      <li className="navbar_item"><NavLink className="navbar_link link" onClick={() => setActiveNav(false)} to="/SpanishForKids">Spanish for kids</NavLink></li>
+                      <li className="navbar_item"><NavLink className="navbar_link link" onClick={() => setActiveNav(false)} to="/SnackdeSpanol">Snack de español</NavLink></li>
+                  </ul>
+                      
+                </nav>
+              )}
+            
+            </Sticky>
+              
+          </StickyContainer>
+          {/* <Nav activeNav={activeNav} setActiveNav={setActiveNav}/> */}
+          
+          
+        
+          
           <div className="hamburger_nav">
               <Link to="#" className="menu-bars">
-                  <FaBars onClick={ handleNav }/>
+                 <FaBars onClick={ handleNav }/>  
               </Link>
           </div>
       </div>
