@@ -106,9 +106,11 @@
     width: 100%;
   }
   .hablemos-icon {
+    margin-bottom: 0;
     width: 30%;
   }
   .culture-icon{
+    margin-top: 0;
     width: 25%;
   }
 
