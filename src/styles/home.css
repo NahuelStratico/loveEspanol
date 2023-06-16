@@ -1,0 +1,128 @@
+/* @import url('../fonts/headley/HeadleyScript.ttf'); */
+@font-face {
+  font-family: "HeadleyScript";
+  src: local("HeadleyScript"),
+  url('../fonts/headley/HeadleyScript.ttf') format("truetype");
+}
+@font-face{
+  font-family: "HurscolGothic";
+  src: local("HurscolGothic"),
+  url('../fonts/gothic/HurscolGothic.otf') format("truetype");
+} 
+
+
+.hablemos-icon{
+  margin-left: 15%;
+  margin-bottom: -15px;
+  width: 20%;
+}
+.culture-icon{
+  margin-right: 15%;
+  margin-top: -15px;
+  width: 15%;
+}
+.hola_mundo{
+  font-family: "HeadleyScript";
+  color: var(--color-logo);
+  font-size: 6em;
+}
+
+.hola_mundo::before{
+  display: inline-flex;
+  content: '';
+  background-image: url('../assets/start.png');
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: 10px 10px;
+  background-image: #4A62C1;
+  height: 40px;
+  width: 15px;
+}
+.hola_mundo::after{
+  display: inline-flex;
+  content: '';
+  background-image: url('../assets/start.png');
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: 10px 10px;
+  background-image: #4A62C1;
+  height: 40px;
+  width: 15px;
+  margin-left: 5px;
+}
+
+.paragraph{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* How do you teach */
+.how_container{
+  height: auto;
+  background: var(--color-logo);
+}
+.title_howTeach{
+  font-family: "HurscolGothic";
+  text-transform: uppercase;
+  font-size: 2.2em;
+  color: #ffffff;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.6);
+  margin-bottom: 2rem;
+}
+
+.how_teach-container p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+
+
+
+/* ================================
+///////////////////////////////////////////// Queries
+============================ */
+
+@media screen and (max-width: 768px){
+  .icon_container{
+    width: 80%;
+  }
+  .initial_text-container{
+    width: 80%;
+    margin: 1rem 0
+  }
+
+  .step_img{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+  /* Icon container */
+  .icon_container{
+    width: 100%;
+  }
+  .hablemos-icon {
+    width: 30%;
+  }
+  .culture-icon{
+    width: 25%;
+  }
+
+  /* Initial text*/
+  .initial_text-container{
+    width: 100%; 
+    padding: 1rem;
+  }
+  .paragraph{
+    line-height: 1.6;
+  }
+
+  /* How do we teach */
+  .title_howTeach{
+    font-size: 2em;
+  }
+}
