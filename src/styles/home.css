@@ -119,6 +119,9 @@
     width: 100%; 
     padding: 1rem;
   }
+  .hola_mundo{
+    font-size: 5em;
+  }
   .paragraph{
     line-height: 1.6;
   }
