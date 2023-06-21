@@ -86,6 +86,14 @@
   width: 100%;
 }
 
+.link_linkedin{
+  display: inline-block;
+}
+.img_linkedin{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
 
 
 /* ============== Teachers */

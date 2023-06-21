@@ -2,7 +2,6 @@
 import culture from '../assets/culture.png'
 import hablemos from '../assets/hablemos.png'
 import caminito from '../assets/caminitoclases.png'
-// import start from '../assets/start.png'
 import comunicative from '../assets/communicative.png'
 import visual from '../assets/visual.png'
 import storytelling from '../assets/storytelling.png'
@@ -11,6 +10,8 @@ import how1 from '../assets/howTeach1.png'
 import how2 from '../assets/howTeach2.png'
 import how3 from '../assets/howTeach3.png'
 import how4 from '../assets/howTeach4.png'
+import abril from '../assets/img_abril.png'
+import daniela from '../assets/img_daniela.png'
 
 import '../styles/home.css'
 import { NavLink } from 'react-router-dom'
@@ -97,15 +98,19 @@ const Home = () => {
         <h2 className='teachers'>teachers</h2>
       </div>
 
-      <div className='d-flex flex-column flex-md-row'>
+      <div className='d-flex flex-column flex-md-row justify-content-center align-items-center gap-5'>
+
         <div className='daniela_container'>
-          <NavLink className="link_linkedin" to="/"/>
-          {/* <img className='img_daniela' src={} alt="" /> */}
+          <NavLink className="link_linkedin" to="https://www.linkedin.com/in/daniela-borzone-1995ab235/?originalSubdomain=at">
+           <img className='img_linkedin img-fluid rounded-circle' src={daniela} alt="Daniela Borzone" />
+          </NavLink>
         </div>
         <div className='abril_container'>
-          <NavLink className="link_linkedin" to="/"/>
-          {/* <img className='img_abril' src={} alt="" /> */}
+          <NavLink className="link_linkedin" to="https://www.linkedin.com/in/daniela-borzone-1995ab235/?originalSubdomain=at">
+           <img className='img_linkedin img-fluid rounded-circle' src={abril} alt="Abril" />
+          </NavLink>
         </div>
+
       </div>
 
     </div>
