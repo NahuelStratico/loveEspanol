@@ -233,6 +233,12 @@
   .linkedin_name{
     font-size: 1em;
   }
+
+  .description_teacher{
+    width: 80%;
+    line-height: 1.7;
+    font-size: 1.1em;
+  }
 }
 
 @media screen and (max-width: 600px){
@@ -309,5 +315,11 @@
   }
   .linkedin_name{
     font-size: 0.8em;
+  }
+
+  .description_teacher{
+    width: 90%;
+    line-height: 1.8;
+    font-size: 1em;
   }
 }
