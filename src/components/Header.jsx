@@ -16,7 +16,6 @@ const Header = () => {
   const scrollNav = () => {
       if(window.scrollY >= 10){
         setScroll(true)
-        console.log(window.scrollY)
       }else{
         setScroll(false)
       }

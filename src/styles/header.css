@@ -25,6 +25,7 @@
   justify-content: space-around;
   height: auto;
   transition: all .5s ease-in;
+  z-index: 100;
 }
 
 .header.active .header_logo{

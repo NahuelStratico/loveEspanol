@@ -31,6 +31,7 @@
   font-family: 'Poppins', sans-serif;
   margin: 0;
   line-height: 1.5;
+  font-size: 1.2em;
 }
 
 /* =========== How do you teach */
@@ -86,14 +87,8 @@
   width: 100%;
 }
 
-.link_linkedin{
-  display: inline-block;
-}
-.img_linkedin{
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-}
+
+
 
 
 /* ============== Teachers */
@@ -103,6 +98,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
+  margin: 3rem;
 }
 .title_meet{
   font-family: "HurscolGothic";
@@ -123,6 +119,71 @@
 }
 
 
+.profile_container{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  gap: 3rem;
+}
+
+.link_linkedin{
+  position: relative;
+}
+.img_linkedin{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.linkedin_container-daniela{
+  position: absolute;
+  top: 0;
+  left: -70px;
+  width: 50px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.linkedin_container-abril{
+  position: absolute;
+  bottom: 0;
+  right: -50px;
+  width: 50px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon_linkedin{
+  width: 100%;
+}
+.linkedin_name{
+  font-family: "HurscolGothic";
+  text-transform: uppercase;
+  margin: 10px 0 0;
+  font-size: 1.1em;
+  color: #000;
+}
+
+.description_teacher{
+  margin-top: 4rem;
+  width: 72%;
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+.description_teacher p{
+  font-family: 'Poppins', sans-serif;
+}
+
+
 
 
 
@@ -130,6 +191,14 @@
 /* ================================
 ///////////////////////////////////////////// Queries
 ============================ */
+
+@media screen and (max-width: 992px){
+  
+  .linkedin_name{
+    font-size: 1em;
+  }
+}
+
 
 @media screen and (max-width: 768px){
   .icon_container{
@@ -158,6 +227,11 @@
   }
   .icon_container-how-teach p{
     font-size: 2em;
+  }
+
+  /* Teachers */
+  .linkedin_name{
+    font-size: 1em;
   }
 }
 
@@ -220,5 +294,20 @@
   .image_container{
     flex-direction: column;
     padding: 0 1rem;
+  }
+
+  /* Teachers */
+  .linkedin_container-abril{
+    bottom: 0;
+    left: 40px;
+    width: 40px;
+  }
+  .linkedin_container-daniela{
+    top: 245px;
+    left: 40px;
+    width: 40px;
+  }
+  .linkedin_name{
+    font-size: 0.8em;
   }
 }
