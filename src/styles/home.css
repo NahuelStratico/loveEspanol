@@ -184,6 +184,63 @@
 }
 
 
+/* Sweet Deals */
+.bg-sweet{
+  background-color: var(--color-nav);
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  margin: 1rem 0;
+  padding-top: 2rem;
+}
+.bg-sweetTwo{
+  background-color: #FE689B;
+  width: 100%;
+  height:300px;
+}
+.title_sweet{
+  font-family: "HeadleyScript";
+  font-size: 3em;
+  color: #ffffff;
+  margin-bottom: 4rem;
+}
+.title_deals{
+  font-family: "HurscolGothic";
+}
+.price_text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+}
+.price_tittle{
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+.price_pharagraph{
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 1em;
+  text-align: start;
+  margin-top: 1rem;
+}
+.price_img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+.price_img{
+  width: 80%;
+  border-radius: 20px;
+}
+
+
+
 
 
 

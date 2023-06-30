@@ -13,6 +13,7 @@ import how4 from '../assets/howTeach4.png'
 import abril from '../assets/img_abril.png'
 import daniela from '../assets/img_daniela.png'
 import linkedin from '../assets/linkedin.png';
+import imgSweet1 from '../assets/imag-sweetsdeals.png'
 
 import '../styles/home.css'
 import { Link } from 'react-router-dom'
@@ -141,6 +142,51 @@ const Home = () => {
       </div>
 
     </div>
+
+
+    {/* Sweet Deals */}
+    <div className='bg-sweet'>
+      <h3 className='title_sweet'>Sweet  <span className='title_deals'> Deals</span></h3>
+
+      <div className='container d-flex flex-row gap-4'>
+
+        <div className='d-flex flex-column justify-content-center align-items-center'>
+          <div className='price_text-container'>
+            <h5 className='price_tittle'>online individual</h5>
+
+            <p className='price_pharagraph'>Learn Spanish from your home, with 1:1 online lessons. We created a Spanish learning journey just for you, based on your interests and learning needs.</p>
+          </div>
+
+          <div className='price_img-container'>
+            <img  className="img-fluid price_img" src={imgSweet1} alt="Sweet images price" />
+          </div>
+        </div>
+
+        <div className='d-flex flex-column justify-content-center align-items-center'>
+          <div className='price_text-container'>
+            <h5 className='price_tittle'>in-person individual</h5>
+          
+              <p className='price_pharagraph'>Learn Spanish from your home, with 1:1 online lessons. We created a Spanish learning journey just for you, based on your interests and learning needs.</p>
+            
+          </div>
+          <div className='price_img-container'>
+            <img  className="img-fluid price_img" src={imgSweet1} alt="Sweet images price" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div className='bg-sweetTwo'>
+      <div className='container'>
+        <div>
+          
+        </div>
+      </div>
+    </div>
+
+
 
       <div style={{height:'100vh'}}>
 
