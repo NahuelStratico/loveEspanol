@@ -175,6 +175,7 @@
 
 .description_teacher{
   margin-top: 4rem;
+  margin-bottom: 3rem;
   width: 72%;
   line-height: 1.5;
   font-size: 1.2em;
@@ -191,12 +192,12 @@
   height: 400px;
   text-align: center;
   margin: 1rem 0;
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 .bg-sweetTwo{
   background-color: #FE689B;
   width: 100%;
-  height:300px;
+  height:390px;
 }
 .title_sweet{
   font-family: "HeadleyScript";
@@ -214,31 +215,45 @@
   align-items: center;
   width: 85%;
 }
-.price_tittle{
-  font-family: 'Poppins', sans-serif;
+.price_title{
+  font-family: 'EB Garamond', serif;
   color: #fff;
   text-transform: uppercase;
   font-size: 1.5em;
 }
+.price_subtitle{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  color: #fff;
+}
 .price_pharagraph{
   font-family: 'Poppins', sans-serif;
   color: #fff;
-  font-size: 1em;
+  font-size: 1.2em;
   text-align: start;
-  margin-top: 1rem;
+  margin-top: .8rem;
+  line-height: 1.6;
 }
 .price_img-container{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 .price_img{
   width: 80%;
   border-radius: 20px;
 }
+.check_conteiner{
+  width: 80%;
+}
+.icon_check{
+  width: 20px;
+  height: 20px;
+  margin-right: .5rem;
 
+}
 
 
 
@@ -292,9 +307,32 @@
   }
 
   .description_teacher{
-    width: 80%;
-    line-height: 1.7;
-    font-size: 1.1em;
+    width: 90%;
+  }
+  .description_teacher p{
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+
+  /* Prices */
+  .bg-sweet{
+    height: 1000px;
+    margin: 0;
+  }
+  .bg-sweetTwo{
+    height: 640px;
+  }
+  .price_text-container{
+    width: 100%;
+  }
+  .price_pharagraph{
+    font-size: 1.5em;
+  }
+  .price_img{
+    width: 100%;
+  }
+  .check_conteiner{
+    width: 100%;
   }
 }
 
@@ -384,8 +422,7 @@
   }
 
   .description_teacher{
-    width: 90%;
-    line-height: 1.8;
-    font-size: 1em;
+    line-height: 1.6;
+    font-size: 1.2em;
   }
 }

@@ -14,6 +14,7 @@ import abril from '../assets/img_abril.png'
 import daniela from '../assets/img_daniela.png'
 import linkedin from '../assets/linkedin.png';
 import imgSweet1 from '../assets/imag-sweetsdeals.png'
+import check from '../assets/check.png'
 
 import '../styles/home.css'
 import { Link } from 'react-router-dom'
@@ -148,11 +149,11 @@ const Home = () => {
     <div className='bg-sweet'>
       <h3 className='title_sweet'>Sweet  <span className='title_deals'> Deals</span></h3>
 
-      <div className='container d-flex flex-row gap-4'>
+      <div className='container d-flex flex-column flex-md-row gap-4'>
 
         <div className='d-flex flex-column justify-content-center align-items-center'>
           <div className='price_text-container'>
-            <h5 className='price_tittle'>online individual</h5>
+            <h5 className='price_title'>online individual</h5>
 
             <p className='price_pharagraph'>Learn Spanish from your home, with 1:1 online lessons. We created a Spanish learning journey just for you, based on your interests and learning needs.</p>
           </div>
@@ -160,18 +161,49 @@ const Home = () => {
           <div className='price_img-container'>
             <img  className="img-fluid price_img" src={imgSweet1} alt="Sweet images price" />
           </div>
+
+          <div className='check_conteiner d-flex flex-column justify-content-center align-items-start'>
+
+            <div className='d-flex flex-row justify-content-center align-items-center mb-2'>
+              <img className='icon_check' src={check} alt="check icon" />
+              <p className='m-0 price_subtitle'>Lesson materials included</p>
+            </div>
+
+            <div className='d-flex flex-row justify-content-center align-items-center mb-4'>
+              <img className='icon_check' src={check} alt="check icon" />
+              <p className='m-0 price_subtitle'>Free access to Club de Conversación</p>
+            </div>
+
+          </div>
+
         </div>
 
-        <div className='d-flex flex-column justify-content-center align-items-center'>
+        <div className='d-flex flex-column align-items-center'>
           <div className='price_text-container'>
-            <h5 className='price_tittle'>in-person individual</h5>
+            <h5 className='price_title'>in-person individual</h5>
           
-              <p className='price_pharagraph'>Learn Spanish from your home, with 1:1 online lessons. We created a Spanish learning journey just for you, based on your interests and learning needs.</p>
+              <p className='price_pharagraph'>Are you in Buenos Aires? ¡Genial! Let's have an in-person lesson in Palermo Buenos Aires. Coffee or tea is on us!</p>
             
           </div>
+
           <div className='price_img-container'>
             <img  className="img-fluid price_img" src={imgSweet1} alt="Sweet images price" />
           </div>
+
+          <div className='check_conteiner d-flex flex-column justify-content-center align-items-start'>
+
+            <div className='d-flex flex-row justify-content-center align-items-center mb-2'>
+              <img className='icon_check' src={check} alt="check icon" />
+              <p className='m-0 price_subtitle'>Exclusive revision videos</p>
+            </div>
+
+            <div className='d-flex flex-row justify-content-center align-items-center'>
+              <img className='icon_check' src={check} alt="check icon" />
+              <p className='m-0 price_subtitle'>No booking or other service fee</p>
+            </div>
+
+          </div>
+
         </div>
 
       </div>
@@ -179,11 +211,11 @@ const Home = () => {
 
 
     <div className='bg-sweetTwo'>
-      <div className='container'>
+      {/* <div className='container'>
         <div>
           
         </div>
-      </div>
+      </div> */}
     </div>
 
 
