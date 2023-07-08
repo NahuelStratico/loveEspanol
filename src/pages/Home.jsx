@@ -96,163 +96,182 @@ const Home = () => {
       </div>
 
     {/* Meet your Teachers */}
-    <div className='container-fluid container-md'>
+      <div className='container-fluid container-md'>
 
-      <div className='teachers_container text-center'>
-        <h3 className='title_meet'>meet your</h3>
-        <h2 className='teachers'>teachers</h2>
-      </div>
+        <div className='teachers_container text-center'>
+          <h3 className='title_meet'>meet your</h3>
+          <h2 className='teachers'>teachers</h2>
+        </div>
 
-      <div className='d-flex flex-column justify-content-center align-items-center'>
+        <div className='d-flex flex-column justify-content-center align-items-center'>
 
-        <div className='profile_container d-flex flex-column flex-md-row justify-content-center align-items-center'>
+          <div className='profile_container d-flex flex-column flex-md-row justify-content-center align-items-center'>
 
-          <div className="link_linkedin" to="https://www.linkedin.com/in/daniela-borzone-1995ab235/?originalSubdomain=at" target="_blank" rel="noopener noreferrer">
-            <img className='img_linkedin img-fluid rounded-circle' src={daniela} alt="Daniela Borzone" />
-          
-            <Link to="https://www.linkedin.com/in/daniela-borzone-1995ab235/?originalSubdomain=at" target="_blank" rel="noopener noreferrer">
-              <div className='linkedin_container-daniela'>
-                <img className='icon_linkedin' src={linkedin} alt="linkedin Daniela Borzone" />
-                <h3 className='linkedin_name'>Daniela</h3>
-              </div>
-            </Link>
+            <div className="link_linkedin" to="https://www.linkedin.com/in/daniela-borzone-1995ab235/?originalSubdomain=at" target="_blank" rel="noopener noreferrer">
+              <img className='img_linkedin img-fluid rounded-circle' src={daniela} alt="Daniela Borzone" />
+            
+              <Link to="https://www.linkedin.com/in/daniela-borzone-1995ab235/?originalSubdomain=at" target="_blank" rel="noopener noreferrer">
+                <div className='linkedin_container-daniela'>
+                  <img className='icon_linkedin' src={linkedin} alt="linkedin Daniela Borzone" />
+                  <h3 className='linkedin_name'>Daniela</h3>
+                </div>
+              </Link>
+
+            </div>
+
+
+            <div className="link_linkedin" to="https://www.linkedin.com/in/daniela-borzone-1995ab235/?originalSubdomain=at" target="_blank" rel="noopener noreferrer">
+              <img className='img_linkedin img-fluid rounded-circle' src={abril} alt="Abril" />
+            
+              <Link to="https://www.linkedin.com/in/daniela-borzone-1995ab235/?originalSubdomain=at" target="_blank" rel="noopener noreferrer">
+                <div className='linkedin_container-abril'>
+                  <img className='icon_linkedin' src={linkedin} alt="linkedin Daniela Borzone" />
+                  <h3 className='linkedin_name'>Abril</h3>
+                </div>
+              </Link>
+
+            </div>
 
           </div>
 
-
-          <div className="link_linkedin" to="https://www.linkedin.com/in/daniela-borzone-1995ab235/?originalSubdomain=at" target="_blank" rel="noopener noreferrer">
-            <img className='img_linkedin img-fluid rounded-circle' src={abril} alt="Abril" />
-          
-            <Link to="https://www.linkedin.com/in/daniela-borzone-1995ab235/?originalSubdomain=at" target="_blank" rel="noopener noreferrer">
-              <div className='linkedin_container-abril'>
-                <img className='icon_linkedin' src={linkedin} alt="linkedin Daniela Borzone" />
-                <h3 className='linkedin_name'>Abril</h3>
-              </div>
-            </Link>
-
+          <div className='description_teacher'>
+            <p className='mb-0'>We are friends and the teachers behind Love Español.
+              Our Spanish variety is called rioplatense but we like to share features and facts from other Spanish-speaking countries.</p>
+              <p>
+                We both speak English and Dani also speaks Italian and German!
+                Abril is specialized in teaching children and creates special resources to play and learn.</p>
           </div>
 
         </div>
 
-        <div className='description_teacher'>
-          <p className='mb-0'>We are friends and the teachers behind Love Español.
-            Our Spanish variety is called rioplatense but we like to share features and facts from other Spanish-speaking countries.</p>
-            <p>
-              We both speak English and Dani also speaks Italian and German!
-              Abril is specialized in teaching children and creates special resources to play and learn.</p>
-        </div>
-
       </div>
-
-    </div>
 
 
     {/* Sweet Deals */}
-    <div className='bg-sweet'>
-      <h3 className='title_sweet'>Sweet  <span className='title_deals'> Deals</span></h3>
+      <div className='bg-sweet'>
+        <h3 className='title_sweet'>Sweet  <span className='title_deals'> Deals</span></h3>
 
-      <div className='container d-flex flex-column flex-lg-row gap-4'>
+        <div className='container d-flex flex-column flex-lg-row gap-4'>
 
-        <div className='card_container'>
+          <div className='card_container'>
 
-          <div className='price_text-container'>
-            <h5 className='price_title'>online individual</h5>
-            <p className='price_pharagraph'>Learn Spanish from your home, with 1:1 online lessons. We created a Spanish learning journey just for you, based on your interests and learning needs.</p>
-          </div>
-
-          <div className='price_img-container'>
-            <img className='bg_price-18' src={bgPrice18} alt="bgPrice 18" />
-            <img  className="price_img-online" src={imgSweet1} alt="Sweet images price" />
-          </div>
-
-          <div className='check_conteiner d-flex flex-column justify-content-center align-items-start'>
-
-            <div className='d-flex flex-row justify-content-center align-items-center mb-2'>
-              <img className='icon_check' src={check} alt="check icon" />
-              <p className='m-0 price_subtitle'>Lesson materials included</p>
+            <div className='price_text-container'>
+              <h5 className='price_title'>online individual</h5>
+              <p className='price_pharagraph'>Learn Spanish from your home, with 1:1 online lessons. We created a Spanish learning journey just for you, based on your interests and learning needs.</p>
             </div>
 
-            <div className='d-flex flex-row justify-content-center align-items-center mb-2'>
-              <img className='icon_check' src={check} alt="check icon" />
-              <p className='m-0 price_subtitle'>Free access to Club de Conversación</p>
+            <div className='price_img-container'>
+              <img className='bg_price-18' src={bgPrice18} alt="bgPrice 18" />
+              <img  className="price_img-online" src={imgSweet1} alt="Sweet images price" />
+            </div>
+
+            <div className='check_conteiner d-flex flex-column justify-content-center align-items-start'>
+
+              <div className='d-flex flex-row justify-content-center align-items-center mb-2'>
+                <img className='icon_check' src={check} alt="check icon" />
+                <p className='m-0 price_subtitle'>Lesson materials included</p>
+              </div>
+
+              <div className='d-flex flex-row justify-content-center align-items-center mb-2'>
+                <img className='icon_check' src={check} alt="check icon" />
+                <p className='m-0 price_subtitle'>Free access to Club de Conversación</p>
+              </div>
+
             </div>
 
           </div>
+
+          <div className='d-block d-md-none bg-white p-1 mt-3'> </div>
+
+          <div className='card_container'>
+
+            <div className='price_text-container'>
+              <h5 className='price_title'>In-person individual</h5>
+              <p className='price_pharagraph'>Are you in Buenos Aires? ¡Genial! Let's have an in-person lesson in Palermo Buenos Aires. Coffee or tea is on us!</p>
+            </div>
+
+            <div className='price_img-container'>
+              <img className='bg_price-22' src={bgPrice22} alt="bgPrice 22" />
+              <img  className="price_img" src={imgSweet1} alt="Sweet images price" />
+            </div>
+
+            <div className='check_conteiner d-flex flex-column justify-content-center align-items-start'>
+
+              <div className='d-flex flex-row justify-content-center align-items-center mb-2'>
+                <img className='icon_check' src={check} alt="check icon" />
+                <p className='m-0 price_subtitle'>Exclusive revision videos</p>
+              </div>
+
+              <div className='d-flex flex-row justify-content-center align-items-center mb-2'>
+                <img className='icon_check' src={check} alt="check icon" />
+                <p className='m-0 price_subtitle'>No booking or other service fee</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          {/* <p className='price_pharagraph'>Are you in Buenos Aires? ¡Genial! Let's have an in-person lesson in Palermo Buenos Aires. Coffee or tea is on us!</p> */}
+
+          {/* <div className='d-flex flex-column align-items-center justify-content-center'>
+
+            <div className='price_text-container'>
+              <h5 className='price_title'>in-person individual</h5>
+              <p className='price_pharagraph'>Are you in Buenos Aires? ¡Genial! Let's have an in-person lesson in Palermo Buenos Aires. Coffee or tea is on us!</p>
+            </div>
+
+            <div className='price_img-container'>
+              <img  className="price_img" src={imgSweet1} alt="Sweet images price" />
+            </div>
+
+            <div className='check_conteiner d-flex flex-column justify-content-center align-items-start'>
+
+              <div className='d-flex flex-row justify-content-center align-items-center mb-2'>
+                <img className='icon_check' src={check} alt="check icon" />
+                <p className='m-0 price_subtitle'>Exclusive revision videos</p>
+              </div>
+
+              <div className='d-flex flex-row justify-content-center align-items-center'>
+                <img className='icon_check' src={check} alt="check icon" />
+                <p className='m-0 price_subtitle'>No booking or other service fee</p>
+              </div>
+
+            </div>
+
+          </div> */}
 
         </div>
+      </div>
 
-        <div className='d-block d-md-none bg-white p-1 mt-3'> </div>
 
-        <div className='card_container'>
-
-          <div className='price_text-container'>
-            <h5 className='price_title'>In-person individual</h5>
-            <p className='price_pharagraph'>Are you in Buenos Aires? ¡Genial! Let's have an in-person lesson in Palermo Buenos Aires. Coffee or tea is on us!</p>
+      <div className='bg-sweetTwo'>
+        {/* <div className='container'>
+          <div>
+            
           </div>
-
-          <div className='price_img-container'>
-            <img className='bg_price-22' src={bgPrice22} alt="bgPrice 22" />
-            <img  className="price_img" src={imgSweet1} alt="Sweet images price" />
-          </div>
-
-          <div className='check_conteiner d-flex flex-column justify-content-center align-items-start'>
-
-            <div className='d-flex flex-row justify-content-center align-items-center mb-2'>
-              <img className='icon_check' src={check} alt="check icon" />
-              <p className='m-0 price_subtitle'>Exclusive revision videos</p>
-            </div>
-
-            <div className='d-flex flex-row justify-content-center align-items-center mb-2'>
-              <img className='icon_check' src={check} alt="check icon" />
-              <p className='m-0 price_subtitle'>No booking or other service fee</p>
-            </div>
-
-          </div>
-
-        </div>
-
-        {/* <p className='price_pharagraph'>Are you in Buenos Aires? ¡Genial! Let's have an in-person lesson in Palermo Buenos Aires. Coffee or tea is on us!</p> */}
-
-        {/* <div className='d-flex flex-column align-items-center justify-content-center'>
-
-          <div className='price_text-container'>
-            <h5 className='price_title'>in-person individual</h5>
-            <p className='price_pharagraph'>Are you in Buenos Aires? ¡Genial! Let's have an in-person lesson in Palermo Buenos Aires. Coffee or tea is on us!</p>
-          </div>
-
-          <div className='price_img-container'>
-            <img  className="price_img" src={imgSweet1} alt="Sweet images price" />
-          </div>
-
-          <div className='check_conteiner d-flex flex-column justify-content-center align-items-start'>
-
-            <div className='d-flex flex-row justify-content-center align-items-center mb-2'>
-              <img className='icon_check' src={check} alt="check icon" />
-              <p className='m-0 price_subtitle'>Exclusive revision videos</p>
-            </div>
-
-            <div className='d-flex flex-row justify-content-center align-items-center'>
-              <img className='icon_check' src={check} alt="check icon" />
-              <p className='m-0 price_subtitle'>No booking or other service fee</p>
-            </div>
-
-          </div>
-
         </div> */}
+      </div>
+
+    
+    {/* Level Test */}
+    <div className='level_test-container'>
+      <div className='container level_test-content'>
+
+        <div className='test_text_container'>
+          <h3 className='title_test'>Level</h3>
+          <h3 className='title_test'>test</h3>
+          <p className='paragraph_test'>Reading and Writing Comprehension and Production</p>
+        </div>
+        
+        <div className='pdf_container'>
+          <p>Image pdf</p>
+          <Link className='bg-pdf'>
+            Let's test your spanish
+          </Link>
+        </div>
 
       </div>
     </div>
-
-
-    <div className='bg-sweetTwo'>
-      {/* <div className='container'>
-        <div>
-          
-        </div>
-      </div> */}
-    </div>
-
-
 
       <div style={{height:'100vh'}}>
 
