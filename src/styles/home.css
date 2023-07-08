@@ -477,10 +477,13 @@
 
   /* Sweet Deals */
   .bg-sweetTwo{
-    height: 430px;
+    height: 400px;
   }
   .price_title{
     margin-top: 2rem;
+  }
+  .price_subtitle{
+    font-size: .9em;
   }
   .price_pharagraph{
     font-size: 1.2em;
