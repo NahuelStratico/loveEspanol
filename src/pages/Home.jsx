@@ -304,7 +304,7 @@ const Home = () => {
             <div className='review_content'>
               <img className='img_heart' src={heart} alt="" />
               <div className='review_bg'>
-                <p className='review_text'>Daniela is a very good teacher. Apart from being very patient, she teaches with commitment. She takes her time and recognizes exactly where her students need help. She also appreciates the students' strengths, which makes learning even easier.</p>
+                <p className='review_text'>We have been working with Abril for two months. She is teaching my three children age 14, 11, 11 on a twice a week basis. She makes her lessons dynamic and fun and the kids all love learning with her. On a practical note, she has been using google classrooms to record the journey they have been on, set home work and communicate with them. As a parent I can see what they have been learning and also be up to date with her teachig process. Abril has a wonderful enthusiasm, creative teaching style and makes her lessons enjoyable.</p>
                 <div className='flag_container'>
                   <p>Jo</p>
                   <img className='icon_flag' src={flagKindom} alt="" />
@@ -315,7 +315,7 @@ const Home = () => {
             <div className='review_content'>
               <img className='img_heart' src={heart} alt="" />
               <div className='review_bg'>
-                <p className='review_text'>Daniela is a very good teacher. Apart from being very patient, she teaches with commitment. She takes her time and recognizes exactly where her students need help. She also appreciates the students' strengths, which makes learning even easier.</p>
+                <p className='review_text'>I was in Argentina in March and was fortunate enough to have Abril as one of my teachers in an intensive Spanish language course. I was very impressed with Abril's enthusiastic attitude, ability to adjust and handle students of different proficiency levels, and the very innovative/original materials she created herself to explain complex grammatical/syntactical concepts in Spanish in a fun, easy to understand manner. I really enjoyed our class and would definitely study Spanish with her again.</p>
                 <div className='flag_container'>
                   <p>Mitch</p>
                   <img className='icon_flag' src={flagStates} alt="" />
@@ -326,7 +326,7 @@ const Home = () => {
             <div className='review_content'>
               <img className='img_heart' src={heart} alt="" />
               <div className='review_bg'>
-                <p className='review_text'>Daniela is a very good teacher. Apart from being very patient, she teaches with commitment. She takes her time and recognizes exactly where her students need help. She also appreciates the students' strengths, which makes learning even easier.</p>
+                <p className='review_text'>I am a teacher myself so when it comes to choosing a tutor I am quite demanding. Daniela is a great teacher! She is always prepared, it’s visible that she puts an effort. She is very attentive to student’s requests and needs. Every lesson is really interesting, full of useful information and entertaining. Good mood after lesson is guaranteed! What is essential for me is that she made me speak in very natural and comfortable manner. I was waiting for every class and I am beyond satisfied. Highly recommended! Thank you!</p>
                 <div className='flag_container'>
                   <p>Elena</p>
                   <img className='icon_flag' src={flagRussia} alt="" />
