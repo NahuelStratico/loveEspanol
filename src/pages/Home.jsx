@@ -17,6 +17,12 @@ import imgSweet1 from '../assets/imag-sweetsdeals.png'
 import check from '../assets/check.png'
 import bgPrice18 from '../assets/bgPrice_18.png'
 import bgPrice22 from '../assets/bgPrice_22.png'
+import imgObelisco from '../assets/ic_pdf.png'
+import flagGermany from '../assets/flag-germany.png'
+import flagKindom from '../assets/flag-kingdom.png'
+import flagStates from '../assets/flag-states.png'
+import flagRussia from '../assets/flag-russia.png'
+import heart from '../assets/heart.svg'
 
 import '../styles/home.css'
 import { Link } from 'react-router-dom'
@@ -264,13 +270,74 @@ const Home = () => {
         </div>
         
         <div className='pdf_container'>
-          <p>Image pdf</p>
-          <Link className='bg-pdf'>
+          <img className='pdf_img' src={imgObelisco} alt="Obelisco" />
+          <Link className='bg-pdf' to="https://docs.google.com/forms/d/e/1FAIpQLSfGaQash35gRJ6LrUnTi-lc3BEfmoepvNwr6ZZvJHOtUStIiQ/viewform" target='_blank'>
             Let's test your spanish
+          </Link>
+          <Link className='bg-pdf' to="https://docs.google.com/forms/d/e/1FAIpQLSfGaQash35gRJ6LrUnTi-lc3BEfmoepvNwr6ZZvJHOtUStIiQ/viewform" target='_blank'>
+            Submit your answers
           </Link>
         </div>
 
       </div>
+    </div>
+
+
+    {/* Whats our student */}
+    <div className='student_container'>
+        <div className='container'>
+          <h3> What our students are saying... </h3>
+          <div className='review_container'>
+
+          {/* Germany */}
+            <div className='review_content'>
+              <img className='img_heart' src={heart} alt="" />
+              <div className='review_bg'>
+                <p className='review_text'>Daniela is a very good teacher. Apart from being very patient, she teaches with commitment. She takes her time and recognizes exactly where her students need help. She also appreciates the students' strengths, which makes learning even easier.</p>
+                <div className='flag_container'>
+                  <p>Shawn</p>
+                  <img className='icon_flag' src={flagGermany} alt="" />
+                </div>
+              </div>
+            </div>
+          {/* Kindom */}
+            <div className='review_content'>
+              <img className='img_heart' src={heart} alt="" />
+              <div className='review_bg'>
+                <p className='review_text'>Daniela is a very good teacher. Apart from being very patient, she teaches with commitment. She takes her time and recognizes exactly where her students need help. She also appreciates the students' strengths, which makes learning even easier.</p>
+                <div className='flag_container'>
+                  <p>Jo</p>
+                  <img className='icon_flag' src={flagKindom} alt="" />
+                </div>
+              </div>
+            </div>
+          {/* State */}
+            <div className='review_content'>
+              <img className='img_heart' src={heart} alt="" />
+              <div className='review_bg'>
+                <p className='review_text'>Daniela is a very good teacher. Apart from being very patient, she teaches with commitment. She takes her time and recognizes exactly where her students need help. She also appreciates the students' strengths, which makes learning even easier.</p>
+                <div className='flag_container'>
+                  <p>Mitch</p>
+                  <img className='icon_flag' src={flagStates} alt="" />
+                </div>
+              </div>
+            </div>
+          {/* Russia */}
+            <div className='review_content'>
+              <img className='img_heart' src={heart} alt="" />
+              <div className='review_bg'>
+                <p className='review_text'>Daniela is a very good teacher. Apart from being very patient, she teaches with commitment. She takes her time and recognizes exactly where her students need help. She also appreciates the students' strengths, which makes learning even easier.</p>
+                <div className='flag_container'>
+                  <p>Elena</p>
+                  <img className='icon_flag' src={flagRussia} alt="" />
+                </div>
+              </div>
+            </div>
+
+            
+
+          </div>
+        </div>
     </div>
 
       <div style={{height:'100vh'}}>
