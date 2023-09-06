@@ -646,7 +646,7 @@
 
   /* Sweet Deals */
   .bg-sweetTwo{
-    height: 480px;
+    height: 326px;
   }
   .price_title{
     margin-top: 2rem;
@@ -682,15 +682,30 @@
 
    /* Footer */
    .footer_container{
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
   }
   .footer_logo-container{
-    text-align: center;
+    text-align: start;
   }
    .Footer_logo_icon{
     width: 70%;
   }
   
-  
+}
+
+@media screen and (max-width: 600px){
+  .footer_container{
+    flex-direction: column;
+    height: 120px;
+    padding: .5rem 0;
+  }
+  .footer_icons{
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .footer_logo-container{
+    text-align: center;
+  }
 }

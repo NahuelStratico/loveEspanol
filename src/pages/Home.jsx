@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 
 import logo from '../assets/logo.png'
+import logoFooter from '../assets/rosa-amarillo.png'
 import culture from '../assets/culture.png'
 import hablemos from '../assets/hablemos.png'
 import caminito from '../assets/roadMap.png'
@@ -350,7 +351,7 @@ const Home = () => {
     <footer className='footer_container'>
         
         <NavLink className="footer_logo-container" to="/">
-            <img className="Footer_logo_icon" src={ logo } alt="logo" />
+            <img className="Footer_logo_icon" src={ logoFooter } alt="logo" />
         </NavLink>
         
         <div className='footer_icons'>
