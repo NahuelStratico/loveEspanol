@@ -538,6 +538,11 @@
   .review_content{
     height: auto;
   }
+
+  /* Footer */
+  .Footer_logo_icon{
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 600px){
@@ -669,6 +674,18 @@
    /* student */
    .student_container h3{
     font-size: 2.5em;
+  }
+
+   /* Footer */
+   .footer_container{
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .footer_logo-container{
+    text-align: center;
+  }
+   .Footer_logo_icon{
+    width: 70%;
   }
   
   
