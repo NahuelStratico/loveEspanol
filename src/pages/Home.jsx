@@ -1,7 +1,9 @@
+import { NavLink } from 'react-router-dom'
 
+import logo from '../assets/logo.png'
 import culture from '../assets/culture.png'
 import hablemos from '../assets/hablemos.png'
-import caminito from '../assets/caminitoclases.png'
+import caminito from '../assets/roadMap.png'
 import comunicative from '../assets/communicative.png'
 import visual from '../assets/visual.png'
 import storytelling from '../assets/storytelling.png'
@@ -14,6 +16,7 @@ import abril from '../assets/img_abril.png'
 import daniela from '../assets/img_daniela.png'
 import linkedin from '../assets/linkedin.png';
 import imgSweet1 from '../assets/imag-sweetsdeals.png'
+import imgSweet2 from '../assets/obelisco.png'
 import check from '../assets/check.png'
 import bgPrice18 from '../assets/bgPrice_18.png'
 import bgPrice22 from '../assets/bgPrice_22.png'
@@ -23,6 +26,9 @@ import flagKindom from '../assets/flag-kingdom.png'
 import flagStates from '../assets/flag-states.png'
 import flagRussia from '../assets/flag-russia.png'
 import heart from '../assets/heart.svg'
+import icInstagram from "../assets/icon-instagram.svg"
+import icSpotify from "../assets/icon-spotify.svg"
+import icWtsp from "../assets/icon-whatsapp.svg"
 
 import '../styles/home.css'
 import { Link } from 'react-router-dom'
@@ -53,6 +59,7 @@ const Home = () => {
         </div>
       </div>
 
+    {/* Road map */}
       <div className='step_img h-6'>
         <img className='img-fluid' src={caminito} alt="camito clases" />
       </div>
@@ -70,7 +77,7 @@ const Home = () => {
               </div>
               <div className='icon_container-how-teach'>
                 <img className='img_howteach' src={visual} alt="" />
-                <p>Visual and cognitive grammar</p>
+                <p>Cognitive grammar</p>
               </div>
               <div className='icon_container-how-teach'>
                 <img className='img_howteach' src={gamification} alt="" />
@@ -88,16 +95,16 @@ const Home = () => {
 
       <div className='image_container'>
         <div className='img_content'>
-          <img className="img-fluid" src={how3} alt="" />
+          <img className="img-fluid img_we" src={how3} alt="" />
         </div>
         <div className='img_content'>
-          <img className="img-fluid" src={how2} alt="" />
+          <img className="img-fluid img_we" src={how2} alt="" />
         </div>
         <div className='img_content'>
-          <img className="img-fluid" src={how1} alt="" />
+          <img className="img-fluid img_we" src={how1} alt="" />
         </div>
         <div className='img_content'>
-          <img className="img-fluid" src={how4} alt="" />
+          <img className="img-fluid img_we" src={how4} alt="" />
         </div>
       </div>
 
@@ -142,10 +149,9 @@ const Home = () => {
 
           <div className='description_teacher'>
             <p className='mb-0'>We are friends and the teachers behind Love Español.
-              Our Spanish variety is called rioplatense but we like to share features and facts from other Spanish-speaking countries.</p>
-              <p>
-                We both speak English and Dani also speaks Italian and German!
-                Abril is specialized in teaching children and creates special resources to play and learn.</p>
+              Our Spanish variety is called rioplatense but we like to share features and facts from other Spanish-speaking countries. <br />
+              We both speak English and Dani also speaks Italian and German!
+              Abril is specialized in teaching children and creates special resources to play and learn.</p>
           </div>
 
         </div>
@@ -187,7 +193,7 @@ const Home = () => {
 
           </div>
 
-          <div className='d-block d-md-none bg-white p-1 mt-3'> </div>
+          {/* <div className='d-block d-md-none bg-white p-1 mt-3'> </div> */}
 
           <div className='card_container'>
 
@@ -198,7 +204,7 @@ const Home = () => {
 
             <div className='price_img-container'>
               <img className='bg_price-22' src={bgPrice22} alt="bgPrice 22" />
-              <img  className="price_img" src={imgSweet1} alt="Sweet images price" />
+              <img  className="price_img" src={imgSweet2} alt="Sweet images price" />
             </div>
 
             <div className='check_conteiner d-flex flex-column justify-content-center align-items-start'>
@@ -340,9 +346,26 @@ const Home = () => {
         </div>
     </div>
 
-      <div style={{height:'100vh'}}>
+    {/* Footer */}
+    <footer className='footer_container'>
+        
+        <NavLink className="footer_logo-container" to="/">
+            <img className="Footer_logo_icon" src={ logo } alt="logo" />
+        </NavLink>
+        
+        <div className='footer_icons'>
+            <a className='link_trial' href="#" target="_blank">
+              <img className='icons-social' src={ icWtsp } alt="icon whatsapp" />
+            </a>
+            <a className='link_trial' href="#" target="_blank">
+              <img className='icons-social' src={ icSpotify } alt="icon spotify" />
+            </a>
+            <a className='link_trial' href="#" target="_blank">
+              <img className='icons-social' src={ icInstagram } alt="icon instagram" />
+            </a>
+        </div>
+    </footer>
 
-      </div>
     </>
   )
 }

@@ -396,6 +396,32 @@
   margin-left: 10px;
 }
 
+/*  Footer */
+.footer_container{
+   background: var(--color-nav);
+   height: 100px;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 2rem;
+}
+
+.footer_logo-container {
+  display: inline-block;
+  width: 40%;
+}
+.Footer_logo_icon{
+  width: 30%;
+}
+.footer_icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 /* ================================
@@ -428,7 +454,6 @@
     margin-top: 3rem;
   }
 }
-
 
 @media screen and (max-width: 768px){
   .icon_container{
@@ -474,11 +499,12 @@
 
   /* Sweet Deals */
   .bg-sweet{
-    height: 1000px;
+    height: 1018px;
     margin: 0;
   }
   .bg-sweetTwo{
     height: 640px;
+    background-color: var(--color-nav);
   }
   .price_text-container{
     width: 100%;
@@ -542,7 +568,7 @@
 
   /* How do we teach */
   .title_howTeach{
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .hola_mundo::before{
@@ -574,6 +600,11 @@
     flex-direction: column;
     padding: 0 1rem;
   }
+  .img_howteach{width: 50%;}
+  .icon_container-how-teach p{font-size: 1.3em;}
+  .image_container{margin:1rem 0}
+  .img_content{text-align: center;}
+  .img_we{width: 50%;}
 
   /* Teachers */
   .teachers_container {
@@ -599,9 +630,9 @@
     font-size: 0.8em;
   }
 
-  .description_teacher{
+  .description_teacher p{
     line-height: 1.6;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   /* Sweet Deals */
